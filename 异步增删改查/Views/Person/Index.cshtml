@@ -1,0 +1,25 @@
+﻿@using System.Collections.Generic;
+@model IEnumerable<TestDTO.Person>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item.Name  @item.Age</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
